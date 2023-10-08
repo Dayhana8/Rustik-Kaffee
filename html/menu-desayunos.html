@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Desayunos</title>
+    <link rel="stylesheet" href="../css/menu-desayunos.css">
+</head>
+<body>
+	
+	
+	
+	<!-- Header -->
+	
+
+	<header class="header">
+		
+		<div class="menu container">
+			
+			<p class="logo">Rustik</p>
+			
+			<input type="checkbox" id="menu" />
+			
+			<label for="menu">
+				<img src="../img/menu.svg" class="menu-icono">
+			</label>
+			<nav class="navbar">
+				<ul>
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="#">Menú <img class="flecha" src="../img/flecha.svg"></a>
+						<ul>
+							<li><a href="menu-bebidas.html">Bebidas</a></li>
+							<li><a href="#">Desayunos</a></li>
+							<li><a href="menu-paninis.html">Paninis y Hamburguesas</a></li>
+							<li><a href="menu-pizzas.html">Pizzas</a></li>
+							<li><a href="menu-postres.html">Postres</a></li>
+						</ul>
+					</li>
+					<li><a href="galeria.html">Galería</a></li>
+					<li><a href="#">Acerca de</a></li>
+					<li><a href="ubicacion.html">Ubicación</a></li>
+					<li><a href="contactos.html">Contactos</a></li>
+				</ul>	
+			</nav>	
+		</div>
+		
+			
+		<div class="header-content container">
+				
+				<div class="header-txt">
+					<h1>Menú de Desayunos</h1>
+					<p>¡Deleitate con todas las opciones<br> que hay en nuestro menú!</p>
+				</div>	
+		</div>			
+	</header>
+	
+	
+	<!-- Menú -->		
+    <div class="menu-container">
+        <div class="image-section">
+            <img src="../img/tazon.jpg" alt="Imagen de bebidas">
+        </div>
+		
+		
+		
+		
+        <div class="menu-section">
+    <div class="menu-title">Menú</div>
+    <div class="menu-categories">
+        <!-- Primera línea de categorías -->
+        <div class="menu-category">
+            <h2>Desayunos &nbsp Dulces</h2>
+            <ul class="menu-options">
+                <li class="menu-option">Churro Waffle</li>
+                <li class="menu-option">Waffle Nutella</li>
+                <li class="menu-option">.</li>
+                <li class="menu-option">.</li>
+                <li class="menu-option">.</li>
+            </ul>
+        </div>
+        <div class="menu-category">
+            <h2>Desayunos Salados</h2>
+            <ul class="menu-options">
+                <li class="menu-option">Típico Salvatore</li>
+                <li class="menu-option">Cazuela Paciana</li>
+				<li class="menu-option">Padella Matina</li>
+                <li class="menu-option">Eggcellent Burger</li>
+                <li class="menu-option">Molletes Rancheros</li>
+            </ul>
+        </div>
+        <!-- Segunda línea de categorías -->
+        <div class="menu-category">
+            <h2>Aperitivos</h2>
+            <ul class="menu-options">
+                <li class="menu-option">Crostini Capresse</li>
+                <li class="menu-option">Papas al forno</li>
+                <li class="menu-option">Pizza para picar</li>
+				<li class="menu-option">Tovolo Mediterráneo</li>
+            </ul>
+        </div>
+        <div class="menu-category">
+            <h2>Crepas</h2>
+            <ul class="menu-options">
+                <li class="menu-option">Crepa de banano/fresa</li>
+                <li class="menu-option">Crepa de dulce de leche</li>
+                <li class="menu-option">Crepa salada 4 Quesos</li>
+                <li class="menu-option">Crepa salada parisina</li>
+            </ul>
+        </div>
+    </div>
+			
+	<div class="menu-buttons">
+        <button class="button1"><a href="menu-bebidas.html">Bebidas</a></button>
+        <button class="button2"><a href="menu-paninis.html">Paninis</a></button>
+    </div>
+
+</div>
+		
+</div>
+	
+	
+	<!-- Footer -->
+	
+	<section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <img id="unete" src="../img/unete.svg" alt="">
+                <h3>Suscríbete</h3>
+				<p>Suscríbete y mantente al día de lo que sucede en Rustik, para que seas el primero en degustar nuestros nuevos platillos.</p>
+				<form action="https://formspree.io/f/mknlpayl" method="POST" autocomplete="off">
+                <input type="email" name="email" placeholder="Ingresa tu correo aquí...">
+                <button type="submit">Suscríbete</button>
+    			</form>
+            </div>
+			
+    
+            <div class="box" id="contactos" style="width: 20em">
+                <img id="call" src="../img/call.svg" alt="">
+                <h3>Contáctanos</h3>
+                <a href="mailto:rustik.kaffe@gmail.com" class="link">rustik.kaffe@gmail.com</a>
+				<p><a href="tel:+503 69718495" class="numero">+503 69718495</a></p>
+            </div>
+    
+            <div class="box" id="redes" style="width: 20em">
+                <img id="siguenos" src="../img/siguenos.svg" alt="">
+                <h3>Síguenos</h3>
+				<a href="https://www.facebook.com/p/Rustik-Kaffee-Bar-100068024423405/"><img id="facebook" src="../img/facebook.svg" alt=""></a>
+				<a href="https://www.instagram.com/rustik.kaffee/?hl=es-la"><img id="instagram" src="../img/instagram.svg" alt=""></a>
+            </div>
+    
+            <div class="box">
+                <img id="horario" src="../img/horario.svg" alt="">
+                <h3>Opening hours</h3>
+                <p>Lunes - Jueves: 11:30 - 7:00 p.m
+                   <br> Viernes - Domingo: 8:00 - 7:00 p.m</p>
+            </div>
+
+        </div>
+
+        <div class="copy">© 2023 Todos los derechos reservados | <span>Rustik</span></div>
+
+	</section>
+	
+	
+</body>
+</html>	

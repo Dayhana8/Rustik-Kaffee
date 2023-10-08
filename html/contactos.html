@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/contactos.css">
+</head>
+<body>
+
+
+
+	<!-- Header -->
+	
+
+	<header class="header">
+		
+		<div class="menu container">
+			
+			<p class="logo">Rustik</p>
+			
+			<input type="checkbox" id="menu" />
+			
+			<label for="menu">
+				<img src="../img/menu.svg" class="menu-icono">
+			</label>
+			<nav class="navbar">
+				<ul>
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="#">Menú <img class="flecha" src="../img/flecha.svg"></a>
+						<ul>
+							<li><a href="menu-bebidas.html">Bebidas</a></li>
+							<li><a href="menu-desayunos.html">Desayunos</a></li>
+							<li><a href="menu-paninis.html">Paninis y Hamburguesas</a></li>
+							<li><a href="menu-pizzas.html">Pizzas</a></li>
+							<li><a href="menu-postres.html">Postres</a></li>
+						</ul>
+					</li>
+					<li><a href="galeria.html">Galería</a></li>
+					<li><a href="#">Acerca de</a></li>
+					<li><a href="ubicacion.html">Ubicación</a></li>
+					<li><a href="#">Contactos</a></li>
+				</ul>	
+			</nav>	
+		</div>
+		
+			
+		<div class="header-content container">
+				
+				<div class="header-txt">
+					<h1>Contactos</h1>
+					<p>¡Contacta con nosotros, será un gusto atenderte!</p>
+				</div>	
+		</div>			
+	</header>
+	
+
+
+
+<!-- Formulario y Contenido de Agradecimiento -->
+<section class="formulario-container">
+    <div class="formulario-wrapper">
+        <form class="formularie" method="POST" autocomplete="off" action="https://formspree.io/f/myyqbaon">
+            <h2>Consulta con Nosotros</h2>
+            <div class="input-group">
+                <div class="input-container">
+                    <input type="text" name="name" placeholder="Nombre y Apellido">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="input-container">
+                    <input type="tel" name="phone" placeholder="Telefono Celular">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <div class="input-container">
+                    <input type="email" name="email" placeholder="Correo">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="input-container">
+                    <textarea name="message" placeholder="Detalles de la Consulta"></textarea>
+                </div>
+                <input type="submit" name="send" class="btn">
+            </div>
+        </form>
+    </div>
+    <div class="agradecimiento">
+        <h2>Agradecemos tu preferencia</h2>
+        <p>Gracias por elegir nuestro servicio. Estamos aquí para ayudarte en lo que necesites.</p>
+        <h2 id="ubi">Ubicación</h2>
+        <p>Rustik Kaffe Bar, 1a Av. Norte y 4a. Calle Oriente, #10, Bo. El Centro, Calle A Apopa, Apopa CP 1123</p>
+        <h2 id="insyface">Redes</h2>
+        <a href="https://www.facebook.com/p/Rustik-Kaffee-Bar-100068024423405/"><img class="facebook" src="../img/facebook2.svg" alt=""></a>
+		<a href="https://www.instagram.com/rustik.kaffee/?hl=es-la"><img class="instagram" src="../img/instagram2.svg" alt=""></a>
+    </div>
+</section>
+
+
+
+
+<!-- Footer -->
+	
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <img id="unete" src="../img/unete.svg" alt="">
+            <h3>Suscríbete</h3>
+            <p>Suscríbete y mantente al día de lo que sucede en Rustik, para que seas el primero en degustar nuestros nuevos platillos.</p>
+            <form action="https://formspree.io/f/mknlpayl" method="POST" autocomplete="off">
+            <input type="email" name="email" placeholder="Ingresa tu correo aquí...">
+            <button type="submit">Suscríbete</button>
+            </form>
+        </div>
+        
+
+        <div class="box" id="contactos" style="width: 20em">
+            <img id="call" src="../img/call.svg" alt="">
+            <h3>Contáctanos</h3>
+            <a href="mailto:rustik.kaffe@gmail.com" class="link">rustik.kaffe@gmail.com</a>
+            <p><a href="tel:+503 69718495" class="numero">+503 69718495</a></p>
+        </div>
+
+        <div class="box" id="redes" style="width: 20em">
+            <img id="siguenos" src="../img/siguenos.svg" alt="">
+            <h3>Síguenos</h3>
+            <a href="https://www.facebook.com/p/Rustik-Kaffee-Bar-100068024423405/"><img id="facebook" src="../img/facebook.svg" alt=""></a>
+            <a href="https://www.instagram.com/rustik.kaffee/?hl=es-la"><img id="instagram" src="../img/instagram.svg" alt=""></a>
+        </div>
+
+        <div class="box">
+            <img id="horario" src="../img/horario.svg" alt="">
+            <h3>Opening hours</h3>
+            <p>Lunes - Jueves: 11:30 - 7:00 p.m
+               <br> Viernes - Domingo: 8:00 - 7:00 p.m</p>
+        </div>
+
+    </div>
+
+    <div class="copy">© 2023 Todos los derechos reservados | <span>Rustik</span></div>
+
+</section>
+
+
+
+<?php
+    include("send.php");
+?>
+
+<script>
+    function myFunction() {
+        window.location.href="http://localhost/RustikKaffee_Fase2"
+    }
+</script>
+
+
+</body>
+</html>
