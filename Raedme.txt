@@ -1,0 +1,9 @@
+Rustik Kaffee y Bar 
+
+Este proyecto consiste en la creación de una página web para un emprendimiento o negocio que actualmente no cuenta con una, por lo que nosotros como equipo presentaremos en este proyecto una página web, que servirá como un medio de informacion en el cual los clientes de la cafetería podrán informarse un poco de lo que tiene el negocio. El propósito de esta página es informar, pues hay personas que a la hora de buscar el lugar siempre lo hacen desde google, por lo que queremos aprovechar esa oportunidad, y que a la hora de que los usuarios entren a buscar el lugar, puedan encontrarse con esta página web.
+
+
+
+Enlace de la ubicación de los Mockups: 
+
+https://github.com/Dayhana8/Mockups
