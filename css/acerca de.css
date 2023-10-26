@@ -430,11 +430,11 @@ section{
 	}
 	.frase{
 		color: #fff;
-		font-size: 12px;
+		font-size: 11px;
 		text-align: center;
-		margin-left: 1.5em;
+		margin-left: 1em;
 		z-index: 2;
-		width: 370px;
+		width: 350px;
 		margin-top: 20px;
 	}
 	#imagen-frase img{
