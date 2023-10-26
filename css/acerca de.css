@@ -446,6 +446,9 @@ section{
 	.persona{
 		animation: scroll 50s linear infinite;
 		-webkit-animation: scroll 50s linear infinite;
+		-ms-animation: scroll 50s linear infinite;
+		-moz-animation: scroll 50s linear infinite;
+		-o-animation: scroll 50s linear infinite;
 	}
 	.persona p{
 		width: 250px;
@@ -454,10 +457,16 @@ section{
 	@keyframes scroll {
 		0% {
 			-webkit-transform: translateX(0);
+			-ms-transform: translateX(0);
+			-moz-transform: translateX(0);
+			-o-transform: translateX(0);
 			transform: translateX(0);
 		}
 		100% {
 			-webkit-transform: translateX(calc(-800px * 3));
+			-ms-transform: translateX(calc(-800px * 3));
+			-moz-transform: translateX(calc(-800px * 3));
+			-o-transform: translateX(calc(-800px * 3));
 			transform: translateX(calc(-800px * 3));
 		}
 	}
