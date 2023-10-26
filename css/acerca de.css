@@ -193,7 +193,10 @@ section{
 	margin-top: 2em;
 	margin-bottom: 3em;
 	animation: scroll 40s linear infinite;
-    -webkit-animation: scroll 40s linear infinite;
+        -webkit-animation: scroll 40s linear infinite;
+	-ms-animation: scroll 40s linear infinite;
+	-moz-animation: scroll 40s linear infinite;
+	-o-animation: scroll 40s linear infinite;
 }
 .persona img{
 	width: 100px;
