@@ -192,7 +192,7 @@ section{
 	margin-top: 2em;
 	margin-bottom: 3em;
 	animation: scroll 40s linear infinite;
-    -webkit-animation: scroll 40s linear infinite;
+    	-webkit-animation: scroll 40s linear infinite;
 	-ms-animation: scroll 40s linear infinite;
 	-moz-animation: scroll 40s linear infinite;
 	-o-animation: scroll 40s linear infinite;
@@ -430,7 +430,6 @@ section{
 		color: #fff;
 		font-size: 11px;
 		text-align: center;
-		padding: 30px;
 		z-index: 2;
 		padding: 25px 4em;
 	}
