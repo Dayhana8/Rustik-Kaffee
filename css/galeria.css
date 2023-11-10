@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
+/*
+font-family: 'Arsenal', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+
+html{
+    font-size: 62.5%;
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+}
+body{
+	font-family: "Quicksand", sans-serif;
+	background-color: #fff;
+	font-weight: 500; 
+}
+section{
+    padding: 2rem 7%;
+}
+
+
+/*--Header--*/
+
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.header{
+	background: linear-gradient(
+	rgba(0,0,0,0.4), rgba(0,0,0,0.4)
+	),
+	url("../img/background7.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	min-height: 70vh;
+	padding: 50px 0 0 0;
+}
+.menu{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 10px;
+}
+.logo{
+	color: #fff;
+	text-transform: uppercase;
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+	font-size: 30px;
+}
+#menu{
+	display: none;
+}
+.menu-icono{
+	width: 30px;
+}
+.menu label{
+	cursor: pointer;
+	display: none;
+}
+.header .navbar ul{
+	list-style: none;
+}
+.header .navbar ul li{
+	position: relative;
+	float: left;
+}
+.header .navbar ul li a{
+	font-size: 18px;
+	padding: 20px;
+	color: #fff;
+	display: block;
+	font-weight: 500;
+	font-family: "Poppins", sans-serif;
+}
+.header .navbar ul li a:hover{
+	color: #d9bA9f;
+}
+.header .navbar ul li ul{
+	position: absolute;
+	left: 0;
+	width: auto;
+	background-color: #835736;
+	display: none;
+	line-height: 16px;
+	top: 5.5rem;
+}
+.header .navbar ul li ul li{
+	width: 100%;
+	border-top: 1px solid #fff;
+}
+.header .navbar ul li ul li a:hover{
+	color: #d9bA9f;
+}
+.header .navbar ul li:focus>within > ul, .header .navbar ul li:hover > ul{
+	display: initial;
+}
+.flecha{
+	width: 18px;
+	margin-left: 6px;
+}
+.header-txt{
+	text-align: center;
+}
+.header-txt h1{
+	font-size: 50px;
+	font-family: "Arsenal", sans-serif;
+	color: #fff;
+	line-height: 1;
+	margin-bottom: 20px;
+	margin-top: 30px
+}
+
+/*--Galeria--*/
+
+#galeria h1{
+	text-align: center;
+	font-size: 4em;
+	margin-top: 1em;
+	color: #75932c;
+
+}
+.gallery {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+	padding: 2rem 0;
+	margin-top: 4em;
+}
+.gallery-slider {
+    display: flex;
+    overflow-x: scroll;
+	scrollbar-width: auto;
+	scroll-behavior: smooth; 
+}
+.gallery-slider img {
+    width: auto;
+    height: 400px;
+    flex: 0 0 auto;
+	transition: transform 0.3s ease; 
+	margin-right: 10px;
+	min-width: 20%;
+}
+.gallery-slider{
+	scrollbar-width: thin;
+}
+.gallery-slider::-webkit-scrollbar {
+    width: 10px;
+	height: 12px;
+}
+.gallery-slider::-webkit-scrollbar-thumb {
+    background-color: #77330e;
+    border-radius: 10px;
+}
+.gallery-slider::-webkit-scrollbar-thumb:hover {
+    background-color: #7C4400;
+}
+.gallery-slider::-webkit-scrollbar-track {
+    background-color: #eee;
+}
+.gallery-slider::-webkit-scrollbar-track-piece {
+    background-color: #d2b495;
+}
+
+/*--Modal de la Galeria--*/
+.gallery-image {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(47, 39, 33, 0.88);
+    z-index: 1;
+    text-align: center;
+}
+.modal-content {
+    max-width: 80%;
+    max-height: 80%;
+    margin: auto;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #d9bA9f;
+    font-size: 40px;
+    cursor: pointer;
+	background-color: #77330e;
+	border-radius: 50%;
+}
+.close {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    color: #fff; 
+    font-size: 40px; 
+    cursor: pointer;
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%; 
+    background: #75932c;
+    text-align: center;
+    line-height: 40px; 
+}
+.gallery-image.clicked {
+    transform: scale(1);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+/*--Footer--*/
+
+.footer{
+    background: #2f2721;
+}
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 2rem;
+    margin-top: 30px;
+} 
+.footer .box-container .box h3{
+    font-size: 1.8em;
+    color: #fff;
+    padding: 1rem 0;
+}
+h3 a{
+	color: #fff;
+}
+h3 a:hover{
+	color: #d2b495;
+}
+.footer .box-container .box p{
+    font-size: 15px;
+    color: #ccc;
+    padding: 16px 0;
+	text-align: justify	
+}
+.footer .box-container .box .link{
+    font-size: 16px;
+    line-height: 3;
+    color: #d3ad7f;
+    padding: .5rem 0;
+    display: block;
+}
+.footer .box-container .box .link:hover{
+    color: #ccc;
+    text-decoration: none;
+}
+.footer .box-container .box .numero{
+    font-size: 16px;
+    color: #d3ad7f;
+}
+.footer .box-container .box .numero:hover{
+    color: #ccc;
+}
+.box input{
+	outline: none;
+	background: none;
+	border: none;
+	border-bottom: 2px solid #d2b495;
+	cursor: pointer;
+	padding: 0.5rem 0;
+	color: #fff;
+	display: block;
+	margin-bottom: 2rem;
+	width: 90%;
+}
+.box input::-webkit-input-placeholder{
+	color: #eee;
+}
+.box button{
+	border: none;
+	background: #d9bA9f;
+	text-transform: uppercase;
+	padding: 0.8rem 2.5rem;
+	border-radius: 2rem;
+	font-size: 1.4em;
+	cursor: pointer;
+	font-weight: 600;
+	color: #5a362a;
+}
+.box button:hover{
+	background-color: #5F4028;
+	color: #fff;
+}
+.footer .copy{
+    color: #fff;
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 3rem;
+    font-size: 2rem;
+    text-transform: capitalize;
+    border-top: 0.1rem solid #d3ad7f;
+}
+.footer .copy span{
+    color: #d3ad7f;
+}
+#unete{
+	width: 33px;
+	height: 33px;
+}
+#call{
+	width: 33px;
+	height: 31px;
+}
+#siguenos{
+	width: 33px;
+	height: 31px;
+}
+#horario{
+	width: 33px;
+	height: 33px;
+}
+#click{
+	width: 40px;
+	height: 40px;
+}
+#contactos{
+	margin-left: 70px;
+}
+#redes{
+	margin-left: 50px;
+}
+#facebook{
+	margin-right: 20px;
+	height: 28px;
+}
+#facebook:hover{
+	transform: scale(1.2);
+}
+#instagram{
+	width: 25px;
+}
+#instagram:hover{
+	transform: scale(1.2);
+}
+
+
+/*--Responsivas--*/
+
+@media (max-width:991px){
+	
+	.menu{
+		padding: 20px;
+	}
+	.menu label{
+		display: initial;
+	}
+	.header .navbar{
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		background-color: #b79c6b;
+		border-top: 1px solid #fff;
+		display: none;
+		text-align: center;
+		z-index: 3;
+	}
+	.header .navbar ul li{
+		width: 100%;
+	}
+	.header .navbar ul li ul{
+		position: relative;
+		width: 100%;
+		top: 0;
+	}
+	.header .navbar ul li ul li{
+		background-color: #835736;
+	}
+	#menu:checked ~ .navbar{
+		display: initial;
+	}
+	.header .navbar ul li a:hover{
+	color: #7C4400;
+	}
+	.header-txt h1{
+		font-size: 41px;
+	}
+	.footer .box-container .box{
+		margin-left: 20px;
+		margin-top: 30px;
+	}
+	#contactos{
+		margin-left: 20px;
+	}
+	#redes{
+		margin-left: 20px;
+	}
+	.footer .box-container .box p{
+		width: 16em;
+		text-align: justify;
+	}
+	.box input{
+		width: 250px;
+	}
+	
+}
+@media (max-width:768px){
+	
+	.footer .box-container .box{
+		margin-left: 20px;
+		margin-top: 20px;
+	}
+	#contactos{
+		margin-left: 20px;
+		margin-top: 20px;
+	}
+	#redes{
+		margin-left: 20px;
+		margin-top: 20px;
+	}
+	.footer .copy{
+		font-size: 1.8rem;
+	}
+
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  
+	.header-txt h1{
+		font-size: 30px;
+	}
+	.footer .box-container .box p{
+    	width: 17em;
+		font-size: 18px;
+	}
+	.footer .box-container .box .link{
+    	font-size: 19px;
+	}
+	.box input{
+		margin-top: 20px;
+	}
+	.box input::-webkit-input-placeholder{
+		font-size: 17px;
+	}
+	.box button{
+		padding: 1rem 2.5rem;
+	}
+
+}
+
